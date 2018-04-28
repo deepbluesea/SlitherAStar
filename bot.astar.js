@@ -133,9 +133,6 @@ var astar = {
             var currentNode = openHeap.pop();
 
             // End case -- result has been found, return the traced path.
-            if (currentNode.x == end.x && currentNode.y == end.y) {
-                return pathTo(currentNode);
-            }
 
             // Normal case -- move currentNode from open to closed, process each of its neighbors.
             currentNode.closed = true;
